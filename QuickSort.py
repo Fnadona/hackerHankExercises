@@ -1,5 +1,3 @@
-arr = [3,8,7,10,0,23,2,1,77,7]
-
 def partition(arr,leftMark,rightMark):
 	pivot = arr[leftMark]
 	count = 1
@@ -22,6 +20,3 @@ def quickSort(arr,leftMark,rightMark):
 		lastPivotIndex = partition(arr, leftMark, rightMark)
 		quickSort(arr,leftMark,lastPivotIndex-1)
 		quickSort(arr,lastPivotIndex+1,rightMark)
-
-quickSort(arr,0,len(arr) - 1)		
-print(arr)
